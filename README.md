@@ -1,18 +1,19 @@
 # No CORS Script
 
-![AutoIt](https://img.shields.io/badge/AutoIt-Script-blue) ![License](https://img.shields.io/badge/License-MIT-green)
+![AutoIt](https://img.shields.io/badge/AutoIt-Script-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Version](https://img.shields.io/badge/Version-1.1-orange)
 
 ## Descripción
 
-El script **No CORS** es una herramienta diseñada para facilitar pruebas de desarrollo al **deshabilitar la seguridad de los navegadores** (como Chrome, Edge, Opera, Brave, Vivaldi y Firefox). Esto es especialmente útil para trabajar con **CORS (Cross-Origin Resource Sharing)**. El script también incluye una función para **probar CORS** y verificar su estado, así como un menú "Acerca de" con los créditos del proyecto.
+El script **No CORS** es una herramienta diseñada para facilitar pruebas de desarrollo al **deshabilitar la seguridad de los navegadores**. Esto es especialmente útil para trabajar con **CORS (Cross-Origin Resource Sharing)**. El script incluye funciones para **probar CORS**, crear/restaurar backups de configuración, y un sistema mejorado de detección de navegadores.
 
 ## Características
 
-- **Deshabilitar seguridad**: Ejecuta el navegador seleccionado con la seguridad deshabilitada.
-- **Test CORS**: Realiza una prueba para verificar si CORS está habilitado o deshabilitado.
-- **Reescanear navegadores**: Detecta automáticamente los navegadores instalados en el sistema.
-- **Interfaz gráfica**: Fácil de usar con una interfaz intuitiva.
-- **Créditos**: Muestra información sobre los autores y el propósito del script.
+- **Deshabilitar seguridad**: Ejecuta el navegador seleccionado con la seguridad deshabilitada
+- **Test CORS**: Realiza pruebas automáticas para verificar el estado de CORS
+- **Sistema de Backup**: Permite crear y restaurar backups de la configuración
+- **Reescanear navegadores**: Detecta automáticamente los navegadores instalados
+- **Interfaz gráfica mejorada**: Diseño intuitivo con barra de progreso y logs detallados
+- **Soporte multi-navegador**: Compatible con una amplia variedad de navegadores
 
 ## Navegadores compatibles
 
@@ -21,40 +22,52 @@ El script **No CORS** es una herramienta diseñada para facilitar pruebas de des
 - Opera
 - Brave
 - Vivaldi
-- Mozilla Firefox
+- Firefox Developer Edition
+- Waterfox
+- Pale Moon
+- Chromium
+- Iron
 
 ## Requisitos
 
 - **Sistema operativo**: Windows
-- **AutoIt**: El script está escrito en AutoIt, por lo que necesitas tener instalado el intérprete de AutoIt para ejecutarlo.
+- **AutoIt**: Versión 3 o superior
+- **Espacio en disco**: Mínimo 50MB para perfiles temporales
 
 ## Instalación
 
-1. Clona este repositorio o descarga el archivo `.au3`.
-2. Asegúrate de tener instalado [AutoIt](https://www.autoitscript.com/site/autoit/downloads/).
-3. Ejecuta el script `No_CORS_Script.au3`.
+1. Clona este repositorio o descarga el archivo `.au3`
+2. Instala [AutoIt](https://www.autoitscript.com/site/autoit/downloads/)
+3. Ejecuta el script `nocors.au3`
 
 ## Uso
 
-1. Abre el script.
-2. Selecciona el navegador que deseas usar.
-3. Haz clic en **Habilitar/Deshabilitar Seguridad** para ejecutar el navegador con la seguridad deshabilitada.
-4. Usa **Test CORS** para verificar el estado de CORS.
-5. Selecciona **Reescanear Navegadores** para detectar los navegadores instalados.
+1. Abre el script
+2. Selecciona el navegador deseado
+3. Opciones disponibles:
+   - **Habilitar/Deshabilitar Seguridad**: Inicia el navegador sin restricciones CORS
+   - **Test CORS**: Verifica el estado de CORS con múltiples endpoints
+   - **Reescanear Navegadores**: Actualiza la lista de navegadores detectados
+   - **Backup/Restaurar**: Gestiona la configuración de los navegadores
 
-## Capturas de pantalla
+## Características nuevas en v1.1
 
-![Interfaz del script](screenshot.png)
+- Soporte para Firefox Developer Edition
+- Sistema de backup y restauración
+- Detección mejorada de navegadores
+- Interfaz actualizada con más información
+- Test CORS con timeout y manejo de errores
+- Limpieza automática de archivos temporales
 
 ## Créditos
 
-- **Autor**: Martin Alejandro Oviedo
-- **Colaboración**: DeepSeek-V3
-- **Versión**: 1.0
-- **Año**: 2023
+- **Desarrollador**: Martin
+- **Mejoras IA**: Deepseek AI
+- **Asistente**: Claude 3.5 Sonnet
+- **Versión**: 1.1
+- **Año**: 2024
 - **Desarrollado para**: NDAWEB Argentina
 
 ## Licencia
 
 Este proyecto está bajo la licencia **MIT**. Para más detalles, consulta el archivo [LICENSE](LICENSE).
-
